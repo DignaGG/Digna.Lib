@@ -1,0 +1,28 @@
+## [ Visual Studio ]
+bin/
+obj/
+out/
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+## [ Build Results ]
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## [ Packages ]
+*.nupkg
+**/packages/*
+!**/packages/build/
+
+## [ Operating System ]
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+## [ Visual Studio Code ]
+.vscode/

@@ -10,16 +10,19 @@ Digna.Lib is engineered with a **"Performance-First"** mindset, adhering to rigo
 
 ## 🚀 Roadmap & Current Modules
 ### Digna.Lib.Math.Combinatorics
-- [x] `Factorial(int n)`: Optimized hybrid calculation engine.
-- [ ] `Permutation(int n, int r)`: (In Progress)
-- [ ] `Combination(int n, int r)`: (Planned)
+- [x] `Factorial(int n)`: Hybrid calculation engine with O(1) pre-computed thresholds.
+- [x] `Permutation(int n, int r)`: Hybrid calculation engine with simplified range multiplication.
+- [ ] `Combination(int n, int r)`: (In Progress)
 
 ## 💻 Installation & Usage
 ```csharp
 using Digna.Lib.Math.Combinatorics;
 
-// Example Usage
-BigInteger result = Factorial.CalculateFactorial(25);
+// Factorial Example Usage
+BigInteger factorialResult = Factorial.CalculateFactorial(25);
+
+// Permutation Example Usage
+BigInteger permutationResult = Permutation.CalculatePermutation(25, 5);
 ```
 
 ## ✍️ Author & Documentation Notes

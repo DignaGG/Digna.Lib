@@ -23,30 +23,24 @@ namespace Digna.Lib.Math.Combinatorics
         /// <exception cref="ArgumentOutOfRangeException">Thrown when n is negative or exceeds the system health threshold (10,000).</exception>
         public static BigInteger CalculateFactorial(int n)
         {
-            // 1. Fail-Fast Validation: Prevent infinite loops and memory exhaustion
+            // 1. Fail-Fast Validation
             if (n < 0 || n > 10000)  throw new ArgumentOutOfRangeException(nameof(n), "The input value must be between 0 and 10,000.");
 
-            // 2. Short-Circuit Returns: O(1) time complexity for constants
+            // 2. Short-Circuit Returns
             if (n == 0 || n == 1) return BigInteger.One;
             if (n == 20) return (BigInteger)FACTORIAL_20;
 
-            // 3. Low-Range Engine (n < 20): Stack-allocated calculation to avoid Garbage Collector (GC) pressure
+            // 3. Low-Range Engine (n < 20)
             if (n < 20)
             {
                 long lowResult = 1;
-                for (int i = 2; i <= n; i++)
-                {
-                    lowResult *= i;
-                }
+                for (int i = 2; i <= n; i++) lowResult *= i;
                 return (BigInteger)lowResult;
             }
 
-            // 4. High-Range Engine (n > 20): Heap-allocated BigInteger calculation starting from pre-computed threshold
+            // 4. High-Range Engine (n > 20)
             BigInteger highResult = FACTORIAL_20;
-            for (int i = 21; i <= n; i++)
-            {
-                highResult *= i;
-            }
+            for (int i = 21; i <= n; i++) highResult *= i;
             return highResult;
         }
     }

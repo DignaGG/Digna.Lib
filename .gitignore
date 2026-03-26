@@ -26,3 +26,7 @@ Desktop.ini
 
 ## [ Visual Studio Code ]
 .vscode/
+
+## [ Local Tests ]
+Digna.Lib.Math.Tests/
+Program.cs/

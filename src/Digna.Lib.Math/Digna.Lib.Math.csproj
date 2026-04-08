@@ -1,16 +1,19 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
 
 	<PropertyGroup>
 		<Authors>DignaGG</Authors>
 		<Company>DignaSoftware</Company>
-		<Description>High-performance combinatorial math library for the Digna ecosystem.</Description>
+		<Description>High-performance mathematical core library for the Digna ecosystem.</Description>
 		<Copyright>Copyright © 2026 DignaSoftware</Copyright>
+		<RepositoryUrl>https://github.com/DignaGG/Digna.Lib</RepositoryUrl>
+		<PackageTags>math;combinatorics;performance;hybrid-engine</PackageTags>
 	</PropertyGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 # Digna.Lib
-![C#](https://img.shields.io/badge/language-C%23-blue)
+![C#](https://img.shields.io/badge/csharp-C%23-blue)
 ![.NET](https://img.shields.io/badge/.NET-10.0-purple)
 ![License](https://img.shields.io/badge/license-MIT-green)
 

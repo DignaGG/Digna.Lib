@@ -32,7 +32,7 @@ BigInteger combinationResult = Combination.CalculateCombination(25,5);
 ```
 
 ## ✍️ Author & Documentation Notes
-**Author:** DignaGG (DignaSoftware)
+**Author:** DignaGG (Junior Software Developer / DignaSoftware)
 
 **Design & Translation Note:** The core architecture, algorithms, and system logic of this library are natively designed and developed in Turkish. To comply with international open-source coding standards, the code comments, XML documentation, and this README were translated into English with AI assistance. The primary engineering focus remains strictly on mathematical accuracy, hardware-level optimization, and system stability.
 
